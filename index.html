@@ -1,0 +1,1479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Logisti ">
+  <link href="assets/images/favicon/favicon.png" rel="icon">
+  <title>MAK Delivery </title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:400,700%7cWork+Sans:400,600,700&display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/icomoon/icomoon.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loading"><span></span><span></span><span></span><span></span></div>
+  </div><!-- /.preloader -->
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-transparent">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="header__top-right d-none d-lg-block">
+            <ul class="list-unstyled d-flex justify-content-end align-items-center">
+              <li><i class="fa-solid fa-phone"></i><a href="tel:01304177009" class="text-white">01304177009</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle width-auto" id="langDrobdown" data-toggle="dropdown">
+                    <i class="fa-solid fa-map-location-dot"></i><span>En</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="langDrobdown">
+                    <a class="dropdown-item" href="#">En</a>
+                    <a class="dropdown-item" href="#">Ban</a>
+                  </div>
+                </div>
+              </li>
+              <li><a href="request-quote.html" class="btn btn__white"><i class="fa-solid fa-briefcase"></i><span>Become Merchant</span></a></li>
+            </ul>
+          </div><!-- /.header-top-right -->
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item with-dropdown">
+                <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contacs.html" class="nav__item-link">Contact Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="#" class="nav__item-link">Login</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          <div class="navbar-modules">
+            <div class="modules__wrapper d-flex align-items-center">
+              <a href="#" class="module__btn module__btn-search"><i class="fa fa-search"></i></a>
+            </div><!-- /.modules-wrapper -->
+          </div><!-- /.navbar-modules -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+    <!-- ============================
+        Slider
+    ============================== -->
+    <section id="slider1" class="slider slider-1">
+      <div class="owl-carousel thumbs-carousel carousel-arrows" data-slider-id="slider1" data-dots="false"
+        data-autoplay="true" data-nav="true" data-transition="fade" data-animate-out="fadeOut" data-animate-in="fadeIn">
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/1.jpg" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">বাংলাদেশের সেরা সফটওয়্যার</h2>
+                  <a href="#" class="btn btn__white mr-40">Our Services</a>
+                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                    <div class="video__player">
+                      <span class="video__player-animation"></span>
+                      <i class="fa fa-play"></i>
+                    </div>Our Video!
+                  </a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-4 subscribe-wrap" style="background: #019ce7; padding:34px; border-radius: 5px;">
+                <div class="subscribe-wrp">
+                  <h3 style="color:white;">TRACK YOUR PARCEL</h3>
+                  <form role="form" action="https://makdelivery.com/api/trackresult2" method="post" id="createForm1">
+                      <input type="text" class="form-control" placeholder="Enter Your Tracking ID" name="trackid" id="trackid" required="" autocomplete="off">
+                      <br>
+                      <button class="default-btn" type="submit" style="width:100%; background:#f7aa30 !important" name="track"> <span style="color:#000;">Track</span>
+                      </button>
+        
+        
+                      <div id="validator-newsletter-1" class="form-result"></div>
+                  </form>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/3.jpg" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">বাংলাদেশের সেরা সফটওয়্যার</h2>
+                  <a href="#" class="btn btn__white mr-40">Get Started</a>
+                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                    <div class="video__player">
+                      <span class="video__player-animation"></span>
+                      <i class="fa fa-play"></i>
+                    </div>Our Video!
+                  </a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-4 subscribe-wrap" style="background: #019ce7; padding:34px; border-radius: 5px;">
+                <div class="subscribe-wrp">
+                  <h3 style="color:white;">TRACK YOUR PARCEL</h3>
+                  <form role="form" action="https://makdelivery.com/api/trackresult2" method="post" id="createForm1">
+                      <input type="text" class="form-control" placeholder="Enter Your Tracking ID" name="trackid" id="trackid" required="" autocomplete="off">
+                      <br>
+                      <button class="default-btn" type="submit" style="width:100%; background:#f7aa30 !important" name="track"> <span style="color:#000;">Track</span>
+                      </button>
+        
+        
+                      <div id="validator-newsletter-1" class="form-result"></div>
+                  </form>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/2.jpg" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">বাংলাদেশের সেরা সফটওয়্যার</h2>
+                  <a href="#" class="btn btn__white mr-40">Our Services</a>
+                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                    <div class="video__player">
+                      <span class="video__player-animation"></span>
+                      <i class="fa fa-play"></i>
+                    </div>Our Video!
+                  </a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-4 subscribe-wrap" style="background: #019ce7; padding:34px; border-radius: 5px;">
+                <div class="subscribe-wrp">
+                  <h3 style="color:white;">TRACK YOUR PARCEL</h3>
+                  <form role="form" action="https://makdelivery.com/api/trackresult2" method="post" id="createForm1">
+                      <input type="text" class="form-control" placeholder="Enter Your Tracking ID" name="trackid" id="trackid" required="" autocomplete="off">
+                      <br>
+                      <button class="default-btn" type="submit" style="width:100%; background:#f7aa30 !important" name="track"> <span style="color:#000;">Track</span>
+                      </button>
+        
+        
+                      <div id="validator-newsletter-1" class="form-result"></div>
+                  </form>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+        <div class="slide-item align-v-h bg-overlay">
+          <div class="bg-img"><img src="assets/images/sliders/5.jpg" alt="slide img"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="slide__content">
+                  <h2 class="slide__title">বাংলাদেশের সেরা সফটওয়্যার</h2>
+                  <a href="#" class="btn btn__white mr-40">Get Started</a>
+                  <a class="btn btn__video popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
+                    <div class="video__player">
+                      <span class="video__player-animation"></span>
+                      <i class="fa fa-play"></i>
+                    </div>Our Video!
+                  </a>
+                </div><!-- /.slide-content -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-4 subscribe-wrap" style="background: #019ce7; padding:34px; border-radius: 5px;">
+                <div class="subscribe-wrp">
+                  <h3 style="color:white;">TRACK YOUR PARCEL</h3>
+                  <form role="form" action="https://makdelivery.com/api/trackresult2" method="post" id="createForm1">
+                      <input type="text" class="form-control" placeholder="Enter Your Tracking ID" name="trackid" id="trackid" required="" autocomplete="off">
+                      <br>
+                      <button class="default-btn" type="submit" style="width:100%; background:#f7aa30 !important" name="track"> <span style="color:#000;">Track</span>
+                      </button>
+        
+        
+                      <div id="validator-newsletter-1" class="form-result"></div>
+                  </form>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.slide-item -->
+      </div><!-- /.carousel -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12  d-none d-lg-block">
+            <div class="owl-thumbs thumbs-dots" data-slider-id="slider1">
+              <button class="owl-thumb-item">
+                <img src="./assets/images/services/1.png" alt="Delivery">
+                <span>Fast Delivery</span>
+              </button>
+              <button class="owl-thumb-item">
+                <img src="./assets/images/services/3.png" alt="Client">
+                <span>Clients Focused</span>
+              </button>
+              <button class="owl-thumb-item">
+                <img src="./assets/images/services/5.png" alt="Track">
+                <span>Real Time Tracking</span>
+              </button>
+              <button class="owl-thumb-item">
+                <img src="./assets/images/services/6.png" alt="Payment">
+                <span>Next Day Payment</span>
+              </button>
+            </div><!-- /.owl-thumbs -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.slider -->
+
+    <!-- ========================
+      About 4
+    =========================== -->
+    <section id="about4" class="about about-2 about-4 pb-40">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="row heading heading-2">
+              <div class="col-sm-12 col-md-12 col-sm-12">
+                <h2 class="heading__title">Safe, Reliable And Express Logistic & Transport Solutions
+                  That Saves Your Time!</h2>
+              </div><!-- /.col-lg-12 -->
+              <div class="col-sm-12 col-md-5 col-lg-5">
+                <div class="carousel owl-carousel carousel-dots" data-slide="1" data-slide-md="1" data-slide-sm="1"
+                  data-autoplay="true" data-nav="false" data-dots="true" data-space="0" data-loop="true"
+                  data-speed="700">
+                  <div class="fancybox-item">
+                    <div class="fancybox__icon">
+                      <i class="fa-solid fa-globe"></i>
+                    </div><!-- /.fancybox-icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Our Mission</h4>
+                      <p class="fancybox__desc">Utilising latest communications, tracking processing software, and
+                        decades of experience.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                  <div class="fancybox-item">
+                    <div class="fancybox__icon">
+                      <i class="fa-solid fa-truck"></i>
+                    </div><!-- /.fancybox-icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Our Vision</h4>
+                      <p class="fancybox__desc">The best possible service in the sphere of optimized route of cargo &
+                        transportation worldwide.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.col-lg-5 -->
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <p class="heading__desc mb-30">Logisti Group is a representative logistics operator providing full range
+                  of service in the sphere
+                  of customs clearance and transport worldwide for any type of cargo.</p>
+                <p>We pride ourselves on providing the best transport and shipping services available allover the
+                  world. Our skilled personnel, utilising the latest communications, tracking and processing software,
+                  combined with decades of experience! Through integrated supply chain solutions, Logisti drives
+                  sustainable competitive advantages to some of Australia's largest companies.</p>
+                <img src="assets/images/about/singnture.png" alt="singnture" class="signature mb-30">
+              </div><!-- /.col-lg-7 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-lg-7 -->
+          <div class="col-sm-12 col-md-9 col-lg-5">
+            <div class="about__img mb-60">
+              <img src="assets/images/about/2.jpg" alt="about img" class="img-fluid">
+              <span>More About Us!</span>
+            </div><!-- /.about-img -->
+          </div><!-- /.col-lg-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.About 4 -->
+
+    <!-- =========================
+       video 1
+      =========================== -->
+    <section id="video1" class="video video-1 bg-overlay bg-parallax counters-white">
+      <div class="bg-img"><img src="assets/images/backgrounds/3.jpg" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="video__btn mb-45">
+              <a class="popup-video" href="https://www.youtube.com/watch?4=&v=TKnufs85hXk">
+                <span class="video__player-animation"></span>
+                <div class="video__player">
+                  <i class="fa fa-play"></i>
+                </div>
+              </a>
+            </div><!-- /.video -->
+          </div><!-- /.col-lg-12 -->
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="heading">
+              <span class="heading__subtitle color-white">Your Package, Your Rules</span>
+              <h3 class="heading__title color-white">Digital Freight That
+                Saves Your Time!</h3>
+            </div><!-- /.heading -->
+          </div><!-- /.col-xl-5 -->
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="row">
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="counter-item">
+                  <div class="counter__icon"><i class="fa-solid fa-truck"></i></div>
+                  <h4><span class="counter">5,000</span><span>+</span></h4>
+                  <p class="counter__desc">Delivery Completed</p>
+                </div><!-- /.counter-item -->
+              </div><!-- /.col-lg-4 -->
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="counter-item">
+                  <div class="counter__icon"><i class="fa-solid fa-users"></i></div>
+                  <h4><span class="counter">80</span><span>+</span></h4>
+                  <p class="counter__desc">Our Clients</p>
+                </div><!-- /.counter-item -->
+              </div><!-- /.col-lg-4 -->
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="counter-item">
+                  <div class="counter__icon"><i class="fa-solid fa-person"></i></div>
+                  <h4><span class="counter">10</span><span>+</span></h4>
+                  <p class="counter__desc">Delivery Persons And Staffs</p>
+                </div><!-- /.counter-item -->
+              </div><!-- /.col-lg-4 -->
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="counter-item">
+                  <div class="counter__icon"><i class="fa-solid fa-money-bill-1"></i></div>
+                  <h4><span class="counter">440</span><span>K+</span></h4>
+                  <p class="counter__desc">Total Amount Paid</p>
+                </div><!-- /.counter-item -->
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+          </div><!-- /.col-xl-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.video 1 -->
+
+    <!-- ========================
+        Request Quote Tabs
+    =========================== -->
+    <section id="requestQuoteTabs" class="request-quote request-quote-tabs pt-0 bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="request__form">
+              <nav class="nav nav-tabs">
+                <a class="nav__link active" data-toggle="tab" href="#dhaka">
+                  <div class="request__form-header d-flex align-items-center">
+                    <h4 class="request__form-title"> Inside Dhaka </h4>
+                  </div><!-- /.request-form-header -->
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#sub-dhaka">
+                  <div class="request__form-header d-flex align-items-center">
+                    <h4 class="request__form-title"> Dhaka Suburb </h4>
+                  </div><!-- /.request-form-header -->
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#dhaka-out">
+                  <div class="request__form-header d-flex align-items-center">
+                    <h4 class="request__form-title">  Outside Dhaka  </h4>
+                  </div><!-- /.request-form-header -->
+                </a>
+              </nav>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="dhaka">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                        <div class="col-sm" style="border:1px solid #d6d6d6;  padding:10px;">
+                          <span style="font-size:18px; color:black;">Upto 1
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳60</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">1 kg to 2
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳75</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; color:black; ">
+                          <span style="font-size:18px; color:black;">2 kg to 3 kg
+
+                          </span>
+                          <br>
+                          <b style="font-size:22px; color:black;">৳90</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">3 kg to 4
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳105</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">4 kg to 5
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳125</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6;  padding:10px; ">
+                          <span style="font-size:18px; color:black;">One Day
+                            Delivery</span>
+                        <br>
+                         <span style="font-size:16px; color:black;">Regular+<b style="font-size:22px; color:black;">৳50</b></span>
+                        </div>
+                    </div>
+                </div><!-- /.request-form-body -->
+                </div><!-- /.tab -->
+                <div class="tab-pane fade" id="sub-dhaka">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="row">
+
+                        <div class="col-sm" style="border:1px solid #d6d6d6;  padding:10px;">
+                          <span style="font-size:18px; color:black;">Upto 1
+                            kg</span>
+                          <br>
+                          <b style="font-size:22px; color:black;">৳100</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">1 kg to 2
+                            kg</span>
+                          <br>
+                          <b style="font-size:22px; color:black;">৳115</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; color:black; ">
+                          <span style="font-size:18px; color:black;">2 kg to 3 kg
+
+                          </span>
+                          <br>
+                          <b style="font-size:22px; color:black;">৳130</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">3 kg to 4
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳145</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">4 kg to 5
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳160</b>
+                        </div>
+                    </div>
+                </div><!-- /.request-form-body -->
+                </div><!-- /.tab -->
+                <!-- /.tab -->
+                <div class="tab-pane fade" id="dhaka-out">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="row">
+                        <div class="col-sm" style="border:1px solid #d6d6d6;  padding:10px;">
+                          <span style="font-size:18px; color:black;">Upto 1
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳120</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">1 kg to 2
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳135</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; color:black; ">
+                          <span style="font-size:18px; color:black;">2 kg to 3 kg
+
+                          </span>
+                          <br>
+                          <b style="font-size:22px; color:black;">৳160</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">3 kg to 4
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳185</b>
+                        </div>
+                        <div class="col-sm" style="border:1px solid #d6d6d6; padding:10px; ">
+                          <span style="font-size:18px; color:black;">4 kg to 5
+                            kg</span>
+                        <br>
+                        <b style="font-size:22px; color:black;">৳210</b>
+                        </div>
+
+
+                    </div>
+                </div><!-- /.request-form-body -->
+                </div><!-- /.tab -->
+              </div><!-- /.tab-content -->
+            </div><!-- /.request-form -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Request Quote Tabs -->
+
+    <!-- ========================
+        Services
+    =========================== -->
+    <section id="services" class="services pt-0 bg-gray">
+      <div class="container">
+        <div class="row heading mb-40">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="heading__subtitle">Services We Offer</span>
+          </div><!-- /.col-lg-12 -->
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <h2 class="heading__title">We Manage Lead Logistics For World’s Multinational Companies.</h2>
+          </div><!-- /.col-lg-5 -->
+          <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-1">
+            <p class="heading__desc">Our global logistics expertise, advanced supply chain technology & customized
+              logistics solutions will help you analyze, develop and implement successful supply chain management
+              strategies.</p>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="service-item">
+              <div class="service__img">
+                <img src="assets/images/services/1.jpg" alt="service" class="img-fluid">
+              </div><!-- /.service-img -->
+              <div class="service__overlay">
+                <div class="service__icon"><img src="./assets/images/services/airplane.png" alt="Flight"></div>
+                <h4 class="service__title">Air Freight</h4>
+                <p class="service__desc">We have more than twenty years of experience. We’ve become expert in freight
+                  transportation by air and all its related.</p>
+                <a href="#" class="btn btn__white btn__link btn__underlined">Read More</a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="service-item">
+              <div class="service__img">
+                <img src="assets/images/services/2.jpg" alt="service" class="img-fluid">
+              </div><!-- /.service-img -->
+              <div class="service__overlay">
+                <div class="service__icon"><img src="./assets/images/services/cargo-ship.png" alt="Ship"></div>
+                <h4 class="service__title">Ocean Freight</h4>
+                <p class="service__desc">We have more than twenty years of experience. We’ve become expert in freight
+                  transportation by air and all its related.</p>
+                <a href="#" class="btn btn__white btn__link btn__underlined">Read More</a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="service-item">
+              <div class="service__img">
+                <img src="assets/images/services/3.jpg" alt="service" class="img-fluid">
+              </div><!-- /.service-img -->
+              <div class="service__overlay">
+                <div class="service__icon"><img src="./assets/images/services/truck.png" alt="Truck"></div>
+                <h4 class="service__title">Road Freight</h4>
+                <p class="service__desc">We have more than twenty years of experience. We’ve become expert in freight
+                  transportation by air and all its related.</p>
+                <a href="#" class="btn btn__white btn__link btn__underlined">Read More</a>
+              </div>
+            </div><!-- /.service-item -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+            <a href="request-quote.html" class="btn btn__primary btn__hover3 btn__lg mt-20">Schedule An Appointment</a>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Services -->
+
+    <!-- =========================== 
+      fancybox Layout2
+    ============================= -->
+    <section id="fancyboxLayout2" class="fancybox-layout2 pb-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 col-xl-4">
+            <div class="heading heading-3 mb-50">
+              <span class="heading__subtitle">Your Package, Your Rules</span>
+              <h2 class="heading__title">We continue to pursue that same vision in today's complex, uncertain world,
+                working every day</h2>
+            </div>
+          </div><!-- /.col-xl-4 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <!-- fancybox item #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/1.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Fast Delivery</h4>
+                <p class="fancybox__desc">The world of international supply chains involves a myriad of unknown risks
+                  and challenging regulations.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-3 -->
+          <!-- fancybox item #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/2.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Service With Love</h4>
+                <p class="fancybox__desc">We ensure our customers’ supply chains are fully compliant by our
+                  comprehensive practices and programs. </p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/3.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Clients Focused</h4>
+                <p class="fancybox__desc">Depending on your product, needs and requirements, we provide professional
+                  warehouse activities.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #4 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/4.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Call Center Support</h4>
+                <p class="fancybox__desc">Our facilities meet high security requirements and are certified to the
+                  highest local standards.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #5 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/5.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Real Time Tracking</h4>
+                <p class="fancybox__desc">You can make use the easy convenient payment options, listed below, that are
+                  available in your country.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- fancybox item #6 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="fancybox-item">
+              <div class="fancybox__icon">
+                <img src="./assets/images/services/6.png" alt="icon">
+              </div><!-- /.fancybox-icon -->
+              <div class="fancybox__content">
+                <h4 class="fancybox__title">Next Day Payment</h4>
+                <p class="fancybox__desc">We enhance our logistics operations by relieving you of the worries associated
+                  with freight forwarding.</p>
+              </div><!-- /.fancybox-content -->
+            </div><!-- /.fancybox-item -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.fancybox Layout2 -->
+
+    <!-- =====================
+       Clients 1
+    ======================== -->
+    <section id="clients1" class="clients clients-1 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="carousel owl-carousel" data-slide="6" data-slide-md="4" data-slide-sm="2" data-autoplay="true"
+              data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/9.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/10.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/11.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/12.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/13.png" alt="client"></a>
+              </div><!-- /.client -->
+              <div class="client">
+                <a href="#"><img src="assets/images/clients/11.png" alt="client"></a>
+              </div><!-- /.client -->
+            </div><!-- /.carousel -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.clients 1 -->
+
+    <!-- =========================
+      Carousel Tabs 
+      =========================== -->
+    <section id="carouselTabs" class="carousel-tabs pb-70">
+      <div class="pricing-bg">
+        <div class="bg-img bg-overlay"><img src="assets/images/backgrounds/1.jpg" alt="background"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-50">
+              <span class="heading__subtitle color-white">Latest Case Studies</span>
+              <h2 class="heading__title color-white">Featured Projects</h2>
+              <div class="divider__line divider__white divider__center"></div>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <nav class="nav nav-tabs nav-tabs-white">
+              <a class="nav__link active" data-toggle="tab" href="#tab1">ALL Works</a>
+              <a class="nav__link" data-toggle="tab" href="#tab2">Distribution</a>
+              <a class="nav__link" data-toggle="tab" href="#tab3">Warehousing</a>
+              <a class="nav__link" data-toggle="tab" href="#tab4">Optimization</a>
+              <a class="nav__link" data-toggle="tab" href="#tab5">Logistics</a>
+              <a class="nav__link" data-toggle="tab" href="#tab6">Analystics</a>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="tab1">
+                <div class="projects-carousel-3  carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Analystics</a><a href="#">Optimization</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Lane Pairing Analysis</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #2 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/2.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #3 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/3.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Logistics</a><a href="#">Analytics</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Minimize Cost Manufacturing</a></h4>
+                      <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
+                        spend by
+                        utilizing an extensive .</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #4 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab2">
+                <div class="projects-carousel-3  carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/5.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Analystics</a><a href="#">Optimization</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Lane Pairing Analysis</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #2 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/6.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #3 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Logistics</a><a href="#">Analytics</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Minimize Cost Manufacturing</a></h4>
+                      <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
+                        spend by
+                        utilizing an extensive .</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #4 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab3">
+                <div class="projects-carousel-3  carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Analystics</a><a href="#">Optimization</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Lane Pairing Analysis</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #2 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/6.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #3 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Logistics</a><a href="#">Analytics</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Minimize Cost Manufacturing</a></h4>
+                      <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
+                        spend by
+                        utilizing an extensive .</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #4 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/2.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab4">
+                <div class="projects-carousel-3  carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/5.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Analystics</a><a href="#">Optimization</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Lane Pairing Analysis</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #2 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/6.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #3 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Logistics</a><a href="#">Analytics</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Minimize Cost Manufacturing</a></h4>
+                      <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
+                        spend by
+                        utilizing an extensive .</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #4 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab5">
+                <div class="projects-carousel-3  carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/6.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #3 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/1.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Logistics</a><a href="#">Analytics</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Minimize Cost Manufacturing</a></h4>
+                      <p class="project__desc">Cost savings is crucial, innovative technology minimizes your overall
+                        spend by
+                        utilizing an extensive .</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #4 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/4.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+              <div class="tab-pane fade" id="tab6">
+                <div class="projects-carousel-3 carousel owl-carousel carousel-dots" data-slide="3" data-slide-md="2"
+                  data-slide-sm="1" data-autoplay="true" data-nav="false" data-dots="true" data-space="30"
+                  data-loop="true" data-speed="800">
+                  <!-- project item #1 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/3.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Analystics</a><a href="#">Optimization</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Lane Pairing Analysis</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                  <!-- project item #2 -->
+                  <div class="project-item">
+                    <div class="project__img">
+                      <img src="assets/images/case-studies/grid/6.jpg" alt="project img">
+                      <a href="#" class="zoom__icon"></a>
+                    </div><!-- /.project-img -->
+                    <div class="project__content">
+                      <div class="project__cat">
+                        <a href="#">Warehousing</a><a href="#">Distribution</a>
+                      </div><!-- /.project-cat -->
+                      <h4 class="project__title"><a href="#">Warehouse Hand Inventory</a></h4>
+                      <p class="project__desc">We understand that data is the greatest asset when it comes to analyzing
+                        and
+                        optimizing your supply chain performance.</p>
+                    </div><!-- /.project-content -->
+                  </div><!-- /.project-item -->
+                </div><!-- /.carousel -->
+              </div><!-- /.tab-pane -->
+            </div><!-- /.tab-content -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Carousel Tabs  -->
+
+    <!-- ========================= 
+            Testimonial #2
+    =========================  -->
+    <section id="testimonial2" class="testimonial testimonial-2 text-center pt-0 pb-170">
+      <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center">
+              <span class="heading__subtitle mb-0">Client’s Testimonials</span>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+            <div class="owl-carousel thumbs-carousel" data-slider-id="1" data-nav="false" data-dots="false">
+              <!-- Testimonial #1 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">Excellent work done by Mak Delivery team, With the best rates and foremost I would like to thanks & appreciate Aditto for all his help and soppurt for the package from assisting me.</p>
+                </div><!-- /.testimonial-content -->
+              </div><!-- /. testimonial-item -->
+              <!-- Testimonial #2 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">Delivery was made on time. The parcel was handled carefully and the packaging you guys did was fantastic. Surely recommend your services.</p>
+                </div><!-- /.testimonial-content -->
+              </div><!-- /. testimonial-item -->
+              <!-- Testimonial #3 -->
+              <div class=" testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">I am extremely happy with the service provided by Mak Delivery. I will choose Courier Force once again when I'll have to make any delivery.</p>
+                </div><!-- /.testimonial-content -->
+              </div><!-- /. testimonial-item -->
+              <div class=" testimonial-item">
+                <div class="testimonial__content">
+                  <p class="testimonial__desc">It was quick. The service was hassle free. Employees were helpful. Thank you very much Mak Delivery for the hassle free great experience. Thanks.</p>
+                </div><!-- /.testimonial-content -->
+              </div><!-- /. testimonial-item -->
+            </div>
+            <div class="owl-thumbs" data-slider-id="1">
+              <button class="owl-thumb-item">
+                <span class="testimonial__meta">
+                  <span class="testimonial__thumb">
+                    <img src="assets/images/testimonials/thumbs/4.jpg" alt="author thumb">
+                  </span><!-- /.testimonial-thumb -->
+                  <span class="testimonial__meta-title">Md Alam Hossain</span>
+                  <span class="testimonial__meta-desc">Rongjoie Mega Mall</span>
+                </span><!-- /.testimonial-meta -->
+              </button>
+              <button class="owl-thumb-item">
+                <span class="testimonial__meta">
+                  <span class="testimonial__thumb">
+                    <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb">
+                  </span><!-- /.testimonial-thumb -->
+                  <span class="testimonial__meta-title">Suzon Ahmed</span>
+                  <span class="testimonial__meta-desc">Sinbad Express</span>
+                </span><!-- /.testimonial-meta -->
+              </button>
+              <button class="owl-thumb-item">
+                <span class="testimonial__meta">
+                  <span class="testimonial__thumb">
+                    <img src="assets/images/testimonials/thumbs/2.jpg" alt="author thumb">
+                  </span><!-- /.testimonial-thumb -->
+                  <span class="testimonial__meta-title">Dipok Roy</span>
+                  <span class="testimonial__meta-desc">Eshoping Bangladesh.</span>
+                </span><!-- /.testimonial-meta -->
+              </button>
+              <button class="owl-thumb-item">
+                <span class="testimonial__meta">
+                  <span class="testimonial__thumb">
+                    <img src="assets/images/testimonials/thumbs/3.png" alt="author thumb">
+                  </span><!-- /.testimonial-thumb -->
+                  <span class="testimonial__meta-title">M Syed</span>
+                  <span class="testimonial__meta-desc">Dhakaiya Bazaar.</span>
+                </span><!-- /.testimonial-meta -->
+              </button>
+            </div><!-- /.owl-thumbs -->
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.testimonial2 -->
+
+    <!-- ======================
+      Blog Grid
+    ========================= -->
+    <section id="blogGrid" class="blog blog-grid pb-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+            <div class="heading text-center mb-50">
+              <span class="heading__subtitle">Insight and Trends</span>
+              <h2 class="heading__title">Recent Articles</h2>
+              <div class="divider__line divider__theme divider__center mb-0"></div>
+              <p class="heading__desc">Follow our latest news and thoughts which focuses exclusively on insight,
+                industry trends, top news headlines.</p>
+            </div><!-- /.heading -->
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+        <div class="row">
+          <!-- Blog Item #1 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="blog-item">
+              <div class="blog__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/1.jpg" alt="blog image">
+                </a>
+              </div><!-- /.entry-img -->
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="blog__meta-cat">
+                    <a href="#">Insights</a><a href="#">Management</a>
+                  </div><!-- /.blog-meta-cat -->
+                  <span class="blog__meta-date">Jan 20, 2019</span>
+                </div><!-- /.blog-meta -->
+                <h4 class="blog__title"><a href="#">Importers achieve cost savings through the First Sale rule!</a></h4>
+                <p class="blog__desc">The trade war currently ensuing between the US and several nations around the
+                  globe, most fiercely with China, shows no signs of the first set of tariffs levied against solar...
+                </p>
+                <a href="#" class="btn btn__secondary btn__link">Read More</a>
+              </div><!-- /.entry-content -->
+            </div><!-- /.blog-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- Blog Item #2 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="blog-item">
+              <div class="blog__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/2.jpg" alt="blog image">
+                </a>
+              </div><!-- /.entry-img -->
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="blog__meta-cat">
+                    <a href="#">Warehousing</a><a href="#">Industry</a>
+                  </div><!-- /.blog-meta-cat -->
+                  <span class="blog__meta-date">Oct 18, 2019</span>
+                </div><!-- /.blog-meta -->
+                <h4 class="blog__title"><a href="#">Cargo flow through better supply chain visibility, control.</a></h4>
+                <p class="blog__desc">Global provider connected products for consumers, and enterprises worldwide,
+                  supply chain control is everything, provide visibility and traceability needed for...</p>
+                <a href="#" class="btn btn__secondary btn__link">Read More</a>
+              </div><!-- /.entry-content -->
+            </div><!-- /.blog-item -->
+          </div><!-- /.col-lg-4 -->
+          <!-- Blog Item #3 -->
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="blog-item">
+              <div class="blog__img">
+                <a href="#">
+                  <img src="assets/images/blog/grid/3.jpg" alt="blog image">
+                </a>
+              </div><!-- /.entry-img -->
+              <div class="blog__content">
+                <div class="blog__meta">
+                  <div class="blog__meta-cat">
+                    <a href="#">Logistics</a><a href="#">Distribution</a>
+                  </div><!-- /.blog-meta-cat -->
+                  <span class="blog__meta-date">Jan 20, 2019</span>
+                </div><!-- /.blog-meta -->
+                <h4 class="blog__title"><a href="#">Importance of specialized focus in Projects, Oil & Gas
+                    Logistics?</a></h4>
+                <p class="blog__desc">Our team provides highly skilled & experienced project managers who know the
+                  intricacies of this vertical and focus on providing innovative solutions in Oil & Gas sector...</p>
+                <a href="#" class="btn btn__secondary btn__link">Read More</a>
+              </div><!-- /.entry-content -->
+            </div><!-- /.blog-item -->
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.blog Grid -->
+
+    <!-- ========================= 
+            cta 1
+    =========================  -->
+    <section id="cta1" class="cta cta-1 border-top pt-40 pb-10">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="contact-panel contact-panel-2">
+              <div class="contact__panel-header d-flex align-items-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4 class="contact__panel-title">Office Location</h4>
+              </div>
+              <div id="accordion">
+                <div class="accordion-item">
+                  <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse1">
+                    <a class="accordion__item-title" href="#">Office Address</a>
+                  </div><!-- /.accordion-item-header -->
+                  <div id="collapse1" class="collapse  show" data-parent="#accordion">
+                    <div class="accordion__item-body">
+                      <ul class="contact__list list-unstyled">
+                        <li>Phone: <a href="tel:01304177009"> 01304177009</a>, <a href="tel:01614001122"> 01614001122</a></li>
+                        <li>Email:  <a href="mailto:info@makdelivery.com">info@makdelivery.com</a></li>
+                        <li>Address: House #05, Road #17, Sector #12, Uttara, Dhaka-1230, Bangladesh.</li>
+                        <!-- <li>Hours: Mon-Fri: 8am – 7pm</li> -->
+                      </ul>
+                    </div><!-- /.accordion-item-body -->
+                  </div>
+                </div><!-- /.accordion-item -->
+              </div>
+            </div><!-- /.contact-panel -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-12 col-lg-3 text-right">
+            <h2 class="cta__title">Sign up for industry news and insights from Logisti.</h2>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <form>
+              <div class="form-group d-flex">
+                <input type="text" class="form-control mr-30" placeholder="Your Email Address">
+                <button class="btn btn__primary btn__hover3">Sign Up!</button>
+              </div>
+            </form>
+          </div><!-- /.col-lg-5 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.cta1 -->
+
+    <!-- ========================= 
+            Google Map
+    =========================  -->
+    <section id="googleMap" class="google-map p-0">
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.6123976760096!2d90.38868011543285!3d23.867893690193526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c419b0e2f071%3A0x18e1ffa3e149ec3a!2smakdelivery!5e0!3m2!1sen!2sbd!4v1658921766692!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <script src="assets/js/google-map.js"></script>
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqrqPZOVegy1VIdyIcndxZY9YGoK-x0Yo&callback=initMap"
+        async defer></script> -->
+    </section><!-- /.GoogleMap -->
+
+    <!-- ========================
+      Footer
+    ========================== -->
+    <footer id="footer" class="footer footer-1">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 footer__widget footer__widget-about">
+              <div class="footer__widget-content">
+                <img src="assets/images/logo/footer-logo.png" alt="logo" class="mb-30">
+              </div>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">Who We Are</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet Our Team</a></li>
+                    <li><a href="#">News & Media</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Careers</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">What We Do</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Warehousing</a></li>
+                    <li><a href="#">Air Freight</a></li>
+                    <li><a href="#">Ocean Freight</a></li>
+                    <li><a href="#">Road Freight</a></li>
+                    <li><a href="#">Supply Chain</a></li>
+                    <li><a href="#">Packaging</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">Who We Serve</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Retail & Consumer</a></li>
+                    <li><a href="#">Sciences & Healthcare</a></li>
+                    <li><a href="#">Industrial & Chemical</a></li>
+                    <li><a href="#">Power Generation</a></li>
+                    <li><a href="#">Food & Beverage</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
+            <div class="col-6 col-sm-6 col-md-3 col-lg-2 footer__widget footer__widget-nav">
+              <h6 class="footer__widget-title">Quick Links</h6>
+              <div class="footer__widget-content">
+                <nav>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Request A Quote</a></li>
+                    <li><a href="#">Track & Trace</a></li>
+                    <li><a href="#">Find A Location</a></li>
+                    <li><a href="#">Global Agents</a></li>
+                    <li><a href="#">Help & FAQ</a></li>
+                  </ul>
+                </nav>
+              </div><!-- /.footer-widget-content -->
+            </div><!-- /.col-lg-2 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.footer-top -->
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-sm-12 col-md-9 col-lg-9">
+              <div class="footer__copyright">
+                <nav>
+                  <ul class="list-unstyled footer__copyright-links flex-wrap d-none">
+                    <li><a href="#">Terms & Conditions </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Employee login</a></li>
+                  </ul>
+                </nav>
+                <span>&copy; 2022 MAK Delivery, with Love by</span>
+                <a href="https://akaarit.com/">Akaarit</a>
+              </div><!-- /.Footer-copyright -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-sm-12 col-md-3 col-lg-3 d-flex align-items-center">
+              <div class="social__icons justify-content-end w-100">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div><!-- /.social-icons -->
+            </div><!-- /.col-lg-6 -->
+          </div><!-- /.row -->
+        </div><!-- /.Footer-bottom -->
+      </div><!-- /.container -->
+    </footer><!-- /.Footer -->
+    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
+
+    <div class="module__search-container">
+      <i class="fa fa-times close-search"></i>
+      <form class="module__search-form">
+        <input type="text" class="search__input" placeholder="Search Here">
+        <button class="module__search-btn"><i class="fa fa-search"></i></button>
+      </form>
+    </div><!-- /.module-search-container -->
+
+  </div><!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/liga.js"></script>
+  <script src="assets/js/icomoon.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
